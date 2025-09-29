@@ -229,7 +229,7 @@ id: ID da mitologia a ser consultada
 
 #### Respostas:
 ##### OK! 200
-Caso essa resposta aconteça, você vai receber as informações do jogo solicitado.
+Caso essa resposta aconteça, você vai receber as informações da mitologia solicitado.
 
 Exemplo de resposta:
 
@@ -258,7 +258,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Jogo não encontrado!"
+    "err": "Mitologia não encontrada!"
 }
 ```
 
