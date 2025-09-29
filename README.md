@@ -252,7 +252,7 @@ Exemplo de resposta:
 ```
 
 ##### Não Encontrado! 404
-Caso essa resposta aconteça, significa que o jogo com o ID fornecido não foi encontrado.
+Caso essa resposta aconteça, significa que a mitologia com o ID fornecido não foi encontrada.
 
 Exemplo de resposta:
 
@@ -269,7 +269,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "ID inválido!"
+    "error": "ID inválido!"
 }
 ```
 
@@ -280,6 +280,6 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno do servidor!"
 }
 ```
