@@ -53,7 +53,7 @@ Exemplo de resposta:
 }
 ```
 
-### - POST /mitologia
+### - POST /mitologias
 Esse endpoint é responsável por cadastrar uma nova mitologia no banco de dados.
 
 #### Parâmetros:
@@ -143,49 +143,60 @@ Esse endpoint é responsável por atualizar as informações de uma mitologia se
 
 #### Parâmetros:
 id: ID da mitologia a ser atualizada.<br>
-title: Título do jogo (opcional).<br>
-year: Ano de lançamento do jogo (opcional).<br>
-price: Preço do jogo (opcional).<br>
-descriptions: Descrições adicionais sobre o jogo (opcional).<br>
+name: Nome da mitologia.<br>
+origin: Origem da mitologia.<.br>
+period: Período do mitologia.<.br>
+summary: Resumo da mitologia.<.br:
+characters: Personagens da mitologia.<.br>
 
 Exemplo de requisição:
 
 ```
 {
-    "title": "Minecraft Updated",
-    "year": 2013,
-    "price": 25,
-    "descriptions": [
-        {
-            "genre": "Sandbox",
-            "platform": "PC",
-            "rating": "E"
-        }
-    ]
+  "_id": {
+    "$oid": "68da7e3f6f1abf22156ab0cf"
+  },
+  "name": "Mitologia Grega",
+  "origin": "Grécia Antiga",
+  "period": "aprox. 1200 a.C. – 146 a.C.",
+  "summary": "A Mitologia Grega reúne narrativas, deuses e heróis criados para explicar fenômenos da natureza e a vida humana.",
+  "characters": [
+    {
+      "name": "Icaro",
+      "symbols": ["asas"],
+      "summary": "Tentou voar pelos ceus"
+    },
+    {
+      "name": "Atena",
+      "symbols": ["Coruja", "Oliveira", "Lança", "Escudo"],
+      "summary": "Deusa da sabedoria, da estratégia militar e das artes."
+    }
+  ]
 }
+
 ```
 
 #### Respostas:
 ##### OK! 200
-Caso essa resposta aconteça, as informações do jogo foram atualizadas com sucesso.
+Caso essa resposta aconteça, as informações da mitologia foram atualizadas com sucesso.
 
 Exemplo de resposta:
 
 ```
 {
-    "game": {
-        "title": "Minecraft Updated",
-        "year": 2013,
-        "price": 25,
-        "descriptions": [
-            {
-                "genre": "Sandbox",
-                "platform": "PC",
-                "rating": "E"
-            }
-        ]
-    }
-}
+  "_id": {
+    "$oid": "68da7e3f6f1abf22156ab0cf"
+  },
+  "name": "Mitologia Grega",
+  "origin": "Grécia Antiga",
+  "period": "aprox. 1200 a.C. – 146 a.C.",
+  "summary": "A Mitologia Grega reúne narrativas, deuses e heróis criados para explicar fenômenos da natureza e a vida humana.",
+  "characters": [
+    {
+      "name": "Icaro",
+      "symbols": ["asas"],
+      "summary": "Tentou voar pelos ceus"
+    },
 ```
 
 ##### Requisição Inválida! 400
@@ -195,7 +206,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "ID inválido ou dados malformados!"
+    "error": "ID inválido"
 }
 ```
 
@@ -206,7 +217,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno patrão."
 }
 ```
 
