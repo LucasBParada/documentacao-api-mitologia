@@ -1,4 +1,4 @@
-# Exemplo de documentação de API
+# Documentação API Mitologia
 ![NPM](https://img.shields.io/npm/l/react)
 
 # API Mitologia
