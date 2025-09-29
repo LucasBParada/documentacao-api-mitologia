@@ -104,7 +104,7 @@ Exemplo de resposta:
 ```
 
 
-### - DELETE /mitologia
+### - DELETE /mitologia/_id
 Esse endpoint é responsável por deletar uma mitologia por seu ID.
 
 #### Parâmetros:
