@@ -221,11 +221,11 @@ Exemplo de resposta:
 }
 ```
 
-### - GET /game/
-Esse endpoint é responsável por retornar as informações de um jogo específico pelo seu ID.
+### - GET /mitologias/_id
+Esse endpoint é responsável por retornar as informações de uma mitologia específico pelo seu ID.
 
 #### Parâmetros:
-id: ID do jogo a ser consultado.
+id: ID da mitologia a ser consultada
 
 #### Respostas:
 ##### OK! 200
@@ -234,20 +234,21 @@ Caso essa resposta aconteça, você vai receber as informações do jogo solicit
 Exemplo de resposta:
 
 ```
+```
 {
-    "game": {
-        "title": "Minecraft",
-        "year": 2012,
-        "price": 20,
-        "descriptions": [
-            {
-                "genre": "Sandbox",
-                "platform": "PC",
-                "rating": "E"
-            }
-        ]
-    }
-}
+  "_id": {
+    "$oid": "68da7e3f6f1abf22156ab0cf"
+  },
+  "name": "Mitologia Grega",
+  "origin": "Grécia Antiga",
+  "period": "aprox. 1200 a.C. – 146 a.C.",
+  "summary": "A Mitologia Grega reúne narrativas, deuses e heróis criados para explicar fenômenos da natureza e a vida humana.",
+  "characters": [
+    {
+      "name": "Icaro",
+      "symbols": ["asas"],
+      "summary": "Tentou voar pelos ceus"
+    },
 ```
 
 ##### Não Encontrado! 404
