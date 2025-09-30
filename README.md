@@ -99,7 +99,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno patrão"
+    "error": "Erro interno patrão."
 }
 ```
 
@@ -206,7 +206,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "ID inválido"
+    "error": "ID inválido!"
 }
 ```
 
