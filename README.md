@@ -279,6 +279,6 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno patrão."
 }
 ```
