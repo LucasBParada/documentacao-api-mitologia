@@ -142,12 +142,12 @@ Exemplo de resposta:
 Esse endpoint é responsável por atualizar as informações de uma mitologia selecionada.
 
 #### Parâmetros:
-id: ID da mitologia a ser atualizada.<.br>
-name: Nome da mitologia.<.br>
-origin: Origem da mitologia.<.br>
-period: Período do mitologia.<.br>
-summary: Resumo da mitologia.<.br>
-characters: Personagens da mitologia.<.br>
+id: ID da mitologia a ser atualizada.
+name: Nome da mitologia.
+origin: Origem da mitologia.
+period: Período do mitologia.
+summary: Resumo da mitologia.
+characters: Personagens da mitologia.
 
 Exemplo de requisição:
 
