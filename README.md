@@ -6,7 +6,7 @@ Esta API é utilizada para gerenciar um CRUD (criar, ler, atualizar e deletar) d
 
 ## Endpoints
 ### - GET /mitologias
-Esse endpoint é responsável por retornar a listagem de todas as mitologias cadastrados no banco de dados (Atualmente Hospedado na Nuvem).
+Esse endpoint é responsável por retornar a listagem de todas as mitologias cadastrados no banco de dados (Atualmente Hospedado na Nuvem - Mongo Atlas).
 
 #### Parâmetros:
 Nenhum
