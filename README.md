@@ -234,7 +234,6 @@ Caso essa resposta aconteça, você vai receber as informações da mitologia so
 Exemplo de resposta:
 
 ```
-```
 {
   "_id": {
     "$oid": "68da7e3f6f1abf22156ab0cf"
